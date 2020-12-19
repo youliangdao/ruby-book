@@ -7,5 +7,8 @@ RSpec.describe "RGB" do
       expect(to_hex(255, 255, 255)).to eq "#ffffff"
       expect(to_hex(12, 38, 49)).to eq "#0c2631"
     end
+    it "正しい配列を返すこと" do
+      expect(to_ints("000000")).to eq [0, 0, 0]
+    end
 end
 
